@@ -1,0 +1,57 @@
+// Fonts
+@font-face {
+  font-family: "CodeNext";
+  src: url("../img/Fonts/CodeNext-ExtraBold.woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "CodeNext Italic";
+  src: url("../img/Fonts/CodeNext-ExtraBoldIt.woff");
+  font-style: italic;
+}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  overflow-x: hidden;
+}
+
+.red {
+  color: $red;
+}
+.blue {
+  color: $blue;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 300ms ease-in-out;
+}
+.empathy {
+  font-family: "CodeNext", sans-serif;
+}
+.empathyI {
+  font-family: "CodeNext Italic", sans-serif;
+}
+.full-page {
+  background: $orange;
+}
+body {
+  width: 100vw;
+  max-width: 1920px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.26);
+  width: 5px;
+  border-radius: 16px;
+}

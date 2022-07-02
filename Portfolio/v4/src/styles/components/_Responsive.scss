@@ -1,0 +1,165 @@
+@media screen and (max-width: 800px) {
+  .back-to-top {
+    display: none;
+  }
+  .NavBtn {
+    top: 3vh;
+    height: 10vh;
+    width: 10vh;
+    font-size: 4.5vh;
+    left: 3vh;
+  }
+  #links {
+    a {
+      font-size: 3vh;
+    }
+  }
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    * {
+      overflow: hidden;
+    }
+  }
+  .landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .catch-txt {
+      h1 {
+        font-size: 30vw;
+        text-align: center;
+      }
+      h2 {
+        font-size: 10vw;
+        text-align: justify;
+      }
+    }
+    .discover-txt {
+      margin: 15vh 0;
+      gap: 0;
+      p {
+        font-size: 6vw;
+      }
+      img {
+        margin-top: 5vh;
+        height: 6vh;
+        width: 20vw;
+      }
+    }
+  }
+  .description {
+    padding: 15vh 3vw 0;
+    flex-direction: column;
+    .txt {
+      padding: 0 2vw;
+      max-height: 50vh;
+      width: 90vw;
+      font-size: 5vw;
+    }
+    .divider {
+      display: none;
+    }
+  }
+  .socials {
+    margin-top: 5vh;
+    h3 {
+      font-size: 7vw;
+    }
+  }
+  .projects {
+    background: $orange;
+    .wsm {
+      position: inherit;
+      top: 0;
+      left: 0;
+      height: 7vh;
+      width: 50vw;
+      align-items: center;
+      align-self: center;
+    }
+    .project-content {
+      padding: 0 0;
+      .section-title {
+        font-size: 12vw;
+      }
+      .project-list {
+        display: flex;
+        flex-direction: column;
+        .project-block {
+          max-width: 85vw;
+          .project-title {
+            font-size: 7vw;
+          }
+          .date {
+            font-size: 5vw;
+          }
+          .project-img {
+            max-width: 80vw;
+          }
+        }
+      }
+    }
+  }
+  .Project-Page {
+    .project-landing {
+      height: 100vh;
+      .page-title {
+        font-size: 9vw;
+      }
+    }
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      .project-block {
+        max-width: 85vw;
+        .project-title {
+          font-size: 7vw;
+        }
+        .date {
+          font-size: 5vw;
+        }
+        .project-img {
+          max-width: 90vw;
+        }
+      }
+    }
+  }
+  .timeline {
+    display: none;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    .contact-info {
+      h1 {
+        font-size: 8vw;
+        text-transform: uppercase;
+      }
+      .email {
+        font-size: 4.25vw;
+        letter-spacing: 0.2vw;
+      }
+      .resume {
+        font-size: 4vw;
+      }
+    }
+  }
+  .footers {
+    height: 8vh;
+  }
+  .Project-top {
+    width: $wscreen;
+    position: inherit;
+  }
+  .land-sep {
+    height: 15vh;
+  }
+  .Contact-sep {
+    width: 100vw;
+  }
+}

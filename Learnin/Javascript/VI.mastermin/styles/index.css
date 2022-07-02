@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 90vw;
+  background: #1d1d1d;
+  color: #efefef;
+}
+body #choices {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 24vh;
+  position: absolute;
+  top: 40vh;
+  left: 2.5vw;
+}
+body #choices button {
+  margin: 1vh;
+  height: 10vh;
+  width: 10vh;
+  border: none;
+  background: #efefef;
+  color: #1d1d1d;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 60%;
+}
+body #playerhand {
+  display: flex;
+  flex-direction: row;
+  width: 50vw;
+}
+body #playerhand div {
+  margin: 1vh;
+  border-radius: 60%;
+  height: 10vh;
+  width: 10vh;
+  color: white;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 10vh;
+}/*# sourceMappingURL=index.css.map */

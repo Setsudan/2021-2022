@@ -1,0 +1,27 @@
+#Landing {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 25vh;
+  * {
+    animation: FadeIn 600ms ease-in-out;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .catchphrase {
+    max-width: 30vw;
+    margin-right: 20vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #Landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    .catchphrase {
+      max-width: 95vw;
+    }
+  }
+}
+@import "./WebProjects";

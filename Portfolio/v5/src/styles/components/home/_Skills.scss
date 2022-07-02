@@ -1,0 +1,48 @@
+#skills,
+#currentlylearning {
+  height: auto;
+  padding: 5vh 0;
+  font-size: 6rem;
+  h2 {
+    margin: 3vh 0;
+  }
+  .skillList {
+    display: flex;
+    flex-direction: column;
+    .skill-card {
+      margin: 1.5vh 0;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      opacity: 0;
+      transition: 300ms ease-in-out;
+      .skill {
+        text-decoration: underline;
+      }
+      .intel {
+        margin-left: 1vw;
+        font-size: 3rem;
+        text-decoration: none;
+      }
+    }
+    .skill-card.appear {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #skills,
+  #currentlylearning {
+    h2 {
+      font-size: 4rem;
+    }
+    .skillList {
+      .skill-card {
+        font-size: 3rem;
+        .intel {
+          display: none;
+        }
+      }
+    }
+  }
+}

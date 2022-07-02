@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Clock Animation */
+@-webkit-keyframes time {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes time {
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  background: #d9effd;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 40%, #aacce2 40%);
+  background-size: 25px 60px;
+}
+
+.clock {
+  position: relative;
+  height: 123px;
+  width: 123px;
+  background: white;
+  border-radius: 100%;
+  border: 6px solid #5685a1;
+  position: absolute;
+  top: 35%;
+  left: 45%;
+  margin: auto;
+}
+.clock .top {
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background: #262626;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.clock .right {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  background: #262626;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto 0;
+}
+.clock .bottom {
+  position: absolute;
+  width: 3px;
+  height: 8px;
+  background: #262626;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+.clock .left {
+  position: absolute;
+  width: 8px;
+  height: 3px;
+  background: #262626;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+}
+.clock .center {
+  height: 6px;
+  width: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #262626;
+  border-radius: 100%;
+}
+.clock .hour {
+  width: 3px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: time 86400s infinite linear;
+  animation: time 86400s infinite linear;
+}
+.clock .hour:before {
+  position: absolute;
+  content: "";
+  background: #262626;
+  height: 60px;
+  width: 3px;
+  top: 30px;
+}
+.clock .minute {
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: time 3600s infinite linear;
+  animation: time 3600s infinite linear;
+}
+.clock .minute:before {
+  position: absolute;
+  content: "";
+  background: #262626;
+  height: 40px;
+  width: 1px;
+  top: 50px;
+}
+.clock .second {
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: time 60s infinite linear;
+  animation: time 60s infinite linear;
+}
+.clock .second:before {
+  position: absolute;
+  content: "";
+  background: #fd1111;
+  height: 45px;
+  width: 2px;
+  top: 45px;
+}
+
+@-webkit-keyframes BellRing {
+  0% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+
+@keyframes BellRing {
+  0% {
+    transform: rotate(-45deg);
+  }
+  75% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-45deg);
+  }
+}
+.bell {
+  -webkit-animation: BellRing 900ms ease-in-out infinite;
+          animation: BellRing 900ms ease-in-out infinite;
+  background: goldenrod;
+  border-radius: 32px 32px 0 0;
+  position: absolute;
+  top: 25%;
+  left: 48%;
+  height: 50px;
+  width: 50px;
+}
+.bell .boule {
+  transform: translateY(-0.5vh);
+  border-radius: 100%;
+  position: relative;
+  top: -10%;
+  margin: 0 auto;
+  height: 10px;
+  width: 10px;
+  background: goldenrod;
+}/*# sourceMappingURL=clock.css.map */

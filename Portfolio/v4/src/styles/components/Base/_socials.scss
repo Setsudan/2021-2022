@@ -1,0 +1,27 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin: 2vh 2vw;
+  padding: 1vh;
+  align-items: center;
+  text-align: center;
+  h3 {
+    font-size: 1.55vw;
+    width: 100%;
+  }
+  * {
+    margin: 0.5vh 0.5vw;
+  }
+  .socials-links {
+    display: flex;
+    flex-direction: row;
+  }
+  a {
+    padding: 0.5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+  }
+}

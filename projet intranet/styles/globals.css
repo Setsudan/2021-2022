@@ -1,0 +1,495 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;1,300;1,400&display=swap");
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: #06b6d4;
+  color: #171717;
+  overflow-x: hidden;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 300ms ease-in-out;
+}
+
+button {
+  background: transparent;
+  border: none;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 95vw;
+  padding: 0 2.5vw;
+}
+
+a {
+  color: #171717;
+  text-decoration: none;
+}
+
+.Login-Form,
+.SignUp-Form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 600ms ease-in-out;
+}
+.Login-Form form,
+.SignUp-Form form {
+  background: #06b6d4;
+  color: #efefef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 30vw;
+}
+.Login-Form form h1,
+.SignUp-Form form h1 {
+  font-size: 3rem;
+  margin: 3vh 0;
+}
+.Login-Form form .uid,
+.Login-Form form .password,
+.Login-Form form .email,
+.Login-Form form .username,
+.Login-Form form .passCheck,
+.SignUp-Form form .uid,
+.SignUp-Form form .password,
+.SignUp-Form form .email,
+.SignUp-Form form .username,
+.SignUp-Form form .passCheck {
+  display: flex;
+  flex-direction: column;
+  margin: 1vh 0;
+}
+.Login-Form form input,
+.SignUp-Form form input {
+  background: none;
+  border: none;
+  border-bottom: #171717 2px solid;
+  height: 3vh;
+}
+.Login-Form form button,
+.SignUp-Form form button {
+  background: #efefef;
+  border: none;
+  height: 5vh;
+  width: 5vw;
+  border-radius: 8px;
+  color: #171717;
+  font-weight: bold;
+}
+.Login-Form form a,
+.SignUp-Form form a {
+  width: 6vw;
+  align-self: center;
+  width: 50%;
+  margin-top: 3vh;
+  font-weight: 400;
+}
+
+#Landing {
+  min-height: 97vh;
+  width: 95vw;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 3vh;
+  z-index: 0;
+}
+#Landing .column {
+  min-height: 90vh;
+}
+#Landing section {
+  background: #efefef;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+}
+#Landing input {
+  border-radius: 2px;
+  border: none;
+  background: #171717;
+}
+#Landing .mid {
+  width: 50vw;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Landing .mid .CreatePost {
+  width: 90%;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+}
+#Landing .mid .CreatePost form {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#Landing .mid .CreatePost form .top,
+#Landing .mid .CreatePost form .bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 2.5vh 0;
+}
+#Landing .mid .CreatePost form .top {
+  justify-content: space-between;
+}
+#Landing .mid .CreatePost form .top .pfp {
+  height: 5vh;
+  width: 5vh;
+  margin: 0 2vw;
+}
+#Landing .mid .CreatePost form .top #createpostinput {
+  height: 5vh;
+  width: 80%;
+  background: none;
+  border-bottom: 1px #171717 solid;
+}
+#Landing .mid .CreatePost form .bottom {
+  justify-content: flex-end;
+}
+#Landing .mid .CreatePost form .bottom input,
+#Landing .mid .CreatePost form .bottom button {
+  height: 5vh;
+  margin: 0 0.5vw;
+}
+#Landing .mid span#flux {
+  background: none;
+  margin-top: 2vh;
+  height: auto;
+  width: 90%;
+  border-radius: 8px;
+  padding: 2vh 2vw;
+}
+#Landing .mid span#flux #allPost .main-post {
+  border-radius: 8px;
+  margin: 1.5vh 0;
+  background: #efefef;
+  color: #171717;
+  min-height: 15vh;
+  border: 1px #171717 solid;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 2vh 2vw;
+}
+#Landing .mid span#flux #allPost .main-post img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 2vh;
+}
+#Landing .mid span#flux #allPost .main-post .content-post {
+  display: flex;
+  flex-direction: column;
+}
+#Landing .mid span#flux #allPost .main-post .content-post .date {
+  color: #06b6d4;
+  opacity: 0.5;
+}
+#Landing .left,
+#Landing .right {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#Landing .left .UserProfile {
+  padding: 0;
+  margin: 0;
+  height: 50vh;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#Landing .left .UserProfile #bannerimg {
+  width: 100%;
+  height: 15vh;
+  background-color: cadetblue;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+#Landing .left .UserProfile .pfp {
+  position: relative;
+  border-radius: 60%;
+  height: 7vh;
+  width: 7vh;
+}
+#Landing .left .UserProfile #username {
+  width: 80%;
+  font-size: 1.35rem;
+  margin: 3vh auto;
+  text-align: center;
+  color: #171717;
+}
+#Landing .left .UserProfile #userbio {
+  font-size: 1rem;
+  width: 80%;
+  text-align: left;
+  color: #171717;
+}
+#Landing .left .UserProfile .stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: auto 0;
+  color: #171717;
+}
+#Landing .left .UserProfile .stats #userfollowers,
+#Landing .left .UserProfile .stats #userfollows {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#Landing .left .UserGroupe {
+  margin: 0.5vh 0;
+  height: 40vh;
+  width: 90%;
+}
+#Landing .right .RecentMessages {
+  height: 90vh;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+#Landing .right .RecentMessages::-webkit-scrollbar {
+  width: 5px;
+}
+#Landing .right .RecentMessages::-webkit-scrollbar-track {
+  background: #171717;
+  border-radius: 8px;
+}
+#Landing .right .RecentMessages::-webkit-scrollbar-thumb {
+  background: #171717;
+}
+#Landing .right .RecentMessages::-webkit-scrollbar-thumb:hover {
+  background: #171717;
+}
+#Landing .right .RecentMessages #searchuser {
+  height: 4vh;
+}
+#Landing .right .RecentMessages #discussionlist {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: safe;
+}
+#Landing .right .RecentMessages #discussionlist .message-box {
+  margin: 2vh 0;
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-weight: 300;
+  width: auto;
+}
+#Landing .right .RecentMessages #discussionlist .message-box .userpfp {
+  background-size: cover;
+  height: 6vh;
+  width: 6vh;
+  margin-right: 0.5vw;
+  border-radius: 60%;
+}
+#Landing .right .RecentMessages #discussionlist .message-box .latest-message {
+  text-align: left;
+}
+#Landing .right .RecentMessages #discussionlist .read-false {
+  font-weight: 600;
+}
+#Landing .right .RecentMessages #discussionlist .user-card {
+  position: relative;
+  top: 5vh;
+  left: 0;
+  height: 3vh;
+  width: 15vw;
+  background: #171717;
+  color: #efefef;
+  text-align: center;
+}
+
+#navbar {
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 5vh;
+  color: #efefef;
+}
+#navbar .logo {
+  height: 4vh;
+  width: auto;
+  border-radius: 60%;
+}
+#navbar .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navbar .left input {
+  margin-left: 1vw;
+  height: 3vh;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px #efefef;
+}
+#navbar button {
+  margin: 0 1vw;
+}
+#navbar button:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 500;
+}
+#navbar button:first-child img {
+  margin: 0 0.5vw;
+}
+#navbar .mid {
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  justify-content: right;
+  flex: 2;
+}
+#navbar .mid button {
+  color: #efefef;
+}
+#navbar .right {
+  border-left: #efefef 1px solid;
+  display: flex;
+}
+
+.pfp {
+  height: 5vh;
+  width: 5vh;
+  border-radius: 60%;
+}
+
+.ico {
+  height: 3vh;
+  width: 3vh;
+  stroke: #efefef;
+}
+
+.theme-ico {
+  height: 3vh;
+  width: 3vh;
+  fill: transparent;
+  stroke: #efefef;
+}
+
+.userPage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  background: #efefef;
+  height: 40vh;
+  width: auto;
+}
+
+#modal {
+  background: #efefef;
+  color: #171717;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 50vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
+#modal input {
+  color: white;
+  margin: 0.5vh 0.5vw;
+}
+#modal input::-moz-placeholder {
+  opacity: 1;
+  color: white;
+}
+#modal input:-ms-input-placeholder {
+  opacity: 1;
+  color: white;
+}
+#modal input::placeholder {
+  opacity: 1;
+  color: white;
+}
+
+#modal.visible {
+  display: flex;
+}
+
+.action {
+  height: 2vh;
+  width: 50%;
+  background: #06b6d4;
+  color: #efefef;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 2vh;
+  text-align: center;
+}
+
+.logSign-board a {
+  color: #171717;
+}
+
+.warn {
+  background: red;
+  color: white;
+  height: 5vh;
+  width: 5vw;
+  cursor: pointer;
+}/*# sourceMappingURL=globals.css.map */

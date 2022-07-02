@@ -1,0 +1,66 @@
+.Project-Page {
+  min-height: 100vh;
+  background: $orange;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  .project-landing {
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    .page-title {
+      font-size: 6vw;
+    }
+  }
+  .project-list {
+    z-index: 101;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: minmax(auto);
+    grid-gap: 3vw;
+    align-self: center;
+    .project-block {
+      color: white;
+      text-decoration: none;
+      .madewith {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.25vh;
+      }
+      max-width: 35vw;
+      align-self: baseline;
+      .at {
+        color: white;
+        font-weight: 800;
+        text-decoration: none;
+      }
+      * {
+        margin: 1vh 0;
+      }
+      .project-title {
+        font-size: 2.25vw;
+        font-family: "CodeNext", sans-serif;
+        letter-spacing: 0.5vh;
+      }
+      .date {
+        font-size: 1.5vw;
+        font-weight: 900;
+        letter-spacing: 0.5vh;
+      }
+      .project-desc {
+        font-size: 2vh;
+        text-transform: initial;
+      }
+      .project-img {
+        max-width: 35vw;
+        border-radius: 16px 16px 8px 8px;
+        border: 5px solid $dark;
+      }
+      .pochette {
+        max-width: 35vw;
+        border-radius: 16px 16px 16px 16px;
+        border: 5px solid $dark;
+      }
+    }
+  }
+}

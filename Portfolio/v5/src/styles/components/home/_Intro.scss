@@ -1,0 +1,31 @@
+#intro {
+  margin: 2.5vh 0;
+  height: 25vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-right: 10vw;
+  p {
+    font-size: 1.35rem;
+    max-width: 35vw;
+    font-weight: bold;
+  }
+  .right {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  #intro {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding-right: 0;
+    p {
+      max-width: 100%;
+      margin: 5vh 0;
+    }
+    .right {
+      width: 95vw;
+    }
+  }
+}

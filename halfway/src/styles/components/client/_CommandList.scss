@@ -1,0 +1,90 @@
+#Client-CommandList {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-height: 100vh;
+  width: 100%;
+  padding: 5vh 0;
+  h2 {
+    font-size: 1.5rem;
+  }
+  .sousTitreCheckout{
+    color: #8FDD92;
+  }
+  .buttonCheckout {
+    margin: auto;
+    background: rgb(208, 244, 208);
+    border: 3px solid rgb(208, 244, 208);
+    border-radius: 12px;
+    width: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 210px;
+    height: 45px;
+    font-size: large;
+  }
+  .button1{
+    color:#3c9840;
+    background: #8FDD92;
+    border: none;
+    border-radius: 12px;
+    width: 140px;
+    padding: 5px 5px;
+    margin-top: 15px;
+    /* margin-top: 5%;
+    margin-bottom: 5%; */
+  }
+h5{
+  margin-top:10px;
+}
+.button2{
+    color:#8a62e0;
+    padding: 5px 5px;
+    background: #AF9BDA;
+    border: none;
+    border-radius: 12px;
+    width: 140px;
+    margin-top: 15px;
+   /*  margin-top: 5%;
+    margin-bottom: 5%; */
+}
+.button3{
+  color:#407874;
+  padding: 5px 5px;
+  background: #93D5D1;
+  border: none;
+  border-radius: 12px;
+  width: 140px;
+  margin-top: 15px;
+ /*  margin-top: 5%;
+  margin-bottom: 5%; */
+}
+  .buttonLivraison{
+    margin: auto;
+    background: rgb(208, 244, 208);
+    border: 3px solid rgb(208, 244, 208);
+    border-radius: 12px;
+    color: #8FDD92;
+  }
+  .command-list {
+    display: flex;
+    flex-direction: column;
+    .command-item {
+      .command-item-image {
+        width: 160px;
+        height: auto;
+        margin:  0 0.5vw;
+        object-fit: cover;
+    }
+    
+      display: flex;
+      flex-direction: row;
+      margin: 2vh 0;
+      .command-item-info {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

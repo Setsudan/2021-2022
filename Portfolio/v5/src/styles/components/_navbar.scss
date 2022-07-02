@@ -1,0 +1,33 @@
+#nav {
+  align-items: center;
+  background: $primary;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  left: 1vw;
+  top: 0;
+  position: fixed;
+  width: 98vw;
+  height: 5vh;
+  z-index: 1;
+  * {
+    animation: FadeIn 600ms ease-in-out;
+  }
+  .logo {
+    height: 32px;
+    width: 32px;
+    background-image: url("./img/lny.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .links {
+    a {
+      margin: 0 1.5vw;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #nav {
+    display: none;
+  }
+}

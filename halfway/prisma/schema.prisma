@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("VITE_DATABASE_URL")
+}
+
+model store {
+  id          BigInt  @id(map: "commercant_pkey") @default(autoincrement())
+  name        String? @db.VarChar
+  address     String? @db.VarChar
+  description String? @db.VarChar
+  schedule    Json?   @db.Json
+  category    String? @db.VarChar
+}

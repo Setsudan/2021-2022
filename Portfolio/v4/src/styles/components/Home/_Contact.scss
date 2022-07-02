@@ -1,0 +1,39 @@
+.contact {
+  transform: translateY(-1vh);
+  height: 100vh;
+  background: $blue;
+  display: grid;
+  grid-template-rows: repeat(2, 25vh);
+  grid-template-columns: repeat(3, 25vw);
+  grid-gap: 2vh;
+  padding: 15vh 10vw;
+  .contact-info {
+    margin: 3vh 2vw;
+    grid-column: 1 / 3;
+    * {
+      margin: 2vh 0;
+    }
+    h1 {
+      font-size: 3vw;
+    }
+    .email {
+      font-size: 2.5vw;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5vh;
+    }
+    .resume {
+      font-size: 2vw;
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      letter-spacing: 0.5vh;
+    }
+  }
+  .socials {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+  }
+}

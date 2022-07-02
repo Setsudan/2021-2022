@@ -1,0 +1,98 @@
+.welcome-page {
+  align-items: center;
+  background: url("https://images.unsplash.com/photo-1569172122301-bc5008bc09c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+  .logSign-board {
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px #1d1d1d31;
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;
+    width: 25vw;
+    .links {
+      margin: 2vh;
+      a {
+        color: black;
+        margin: 1vw;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.signUp-Form,
+.Login-Form {
+  * {
+    transition: 300ms ease-in-out;
+  }
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1640622299541-8c8ab8a098f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 25vw;
+    border-radius: 8px;
+    height: 50vh;
+    box-shadow: 5px 5px 10px #1d1d1d31;
+    background: #efefef;
+    h1 {
+      margin: 0 0.5vh;
+      height: 5vh;
+    }
+    div {
+      margin: 0.5vh auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      input {
+        border: none;
+        border-bottom: #1d1d1d solid 3px;
+        background: #efefef;
+        height: 2vh;
+        &:focus {
+          border-bottom: transparent;
+          outline: none;
+          height: 5vh;
+        }
+        &::placeholder {
+          color: #1d1d1d;
+        }
+      }
+    }
+    button {
+      background-color: red;
+      height: 5vh;
+      padding: 0 2vw;
+      color: white;
+      border-radius: 8px;
+    }
+    a {
+      color: black;
+      text-decoration: none;
+      &:hover {
+        border-bottom: #1d1d1d solid 1px;
+      }
+    }
+  }
+}

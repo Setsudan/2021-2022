@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "ENABLE_VC_BUILD": "1",
+      "FORCE_RUNTIME_TAG": "canary"
+    }
+  }
+}

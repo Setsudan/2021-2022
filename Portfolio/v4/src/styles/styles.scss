@@ -1,0 +1,46 @@
+//Root alements
+@import "./components/Base/variables";
+@import "./components/Base/root";
+// Common elements
+@import "./components/Base/NavMenu";
+@import "./components/Base/Footer";
+@import "./components/Base/Projects";
+@import "./components/Base/ScrollToTop";
+@import "./components/Base/socials";
+//Pages
+@import "./Home.page";
+@import "./Projects.page";
+@import "./Courses.page";
+//Responsive
+@import "./components/Responsive";
+// Animations
+@keyframes arrDown {
+  0% {
+    transform: translateY(-0.5vh);
+  }
+  50% {
+    transform: translateY(0.5vh);
+  }
+  99% {
+    transform: translateY(-0.49vh);
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.Project-Page {
+  background-color: $dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  text-transform: uppercase;
+  letter-spacing: 0.5vh;
+}

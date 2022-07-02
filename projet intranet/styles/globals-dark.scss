@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;0,600;1,300;1,400&display=swap");
+$secondary: #171717;
+$primary: #efefef;
+$tertiary: #06b6d4;
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background: $primary;
+  color: $secondary;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 300ms ease-in-out;
+}
+button {
+  background: transparent;
+  border: none;
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  width: 95vw;
+  padding: 0 2.5vw;
+}
+a {
+  color: $primary;
+  text-decoration: none;
+}
+@import "./components/LoginSignUp";
+@import "./components/Landing";
+@import "./components/navbar";
+@import "./components/userPage";
+@import "./components/modal";
+
+.logSign-board {
+  a {
+    color: $secondary;
+  }
+}

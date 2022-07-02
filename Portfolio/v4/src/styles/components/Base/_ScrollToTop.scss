@@ -1,0 +1,26 @@
+//Scroll Top Btn
+.back-to-top {
+  transition: 600ms ease-in-out;
+  position: fixed;
+  height: 10vh;
+  width: 10vh;
+  bottom: 5vh;
+  right: 3vw;
+  font-size: 100px;
+  color: white;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 50px;
+  background: $orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 90%;
+    width: 90%;
+  }
+}
+
+.back-to-top:hover {
+  background: $blue;
+}

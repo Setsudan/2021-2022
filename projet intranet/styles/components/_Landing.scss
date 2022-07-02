@@ -1,0 +1,251 @@
+#Landing {
+  min-height: 97vh;
+  width: 95vw;
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 3vh;
+  z-index: 0;
+  .column {
+    min-height: 90vh;
+  }
+  section {
+    background: $secondary;
+    border-radius: 8px;
+    padding: 2vh 2vw;
+  }
+  input {
+    border-radius: 2px;
+    border: none;
+    background: $primary;
+  }
+  .mid {
+    width: 50vw;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .CreatePost {
+      width: 90%;
+      height: 25vh;
+      display: flex;
+      align-items: center;
+      form {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .top,
+        .bottom {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin: 2.5vh 0;
+        }
+        .top {
+          justify-content: space-between;
+          .pfp {
+            height: 5vh;
+            width: 5vh;
+            margin: 0 2vw;
+          }
+          #createpostinput {
+            height: 5vh;
+            width: 80%;
+            background: none;
+            border-bottom: 1px $primary solid;
+          }
+        }
+        .bottom {
+          justify-content: flex-end;
+          input,
+          button {
+            height: 5vh;
+            margin: 0 0.5vw;
+          }
+        }
+      }
+    }
+    span#flux {
+      background: none;
+      margin-top: 2vh;
+      height: auto;
+      width: 90%;
+      border-radius: 8px;
+      padding: 2vh 2vw;
+      #allPost {
+        .main-post {
+          border-radius: 8px;
+          margin: 1.5vh 0;
+          background: $secondary;
+          color: $primary;
+          min-height: 15vh;
+          border: 1px $primary solid;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          padding: 2vh 2vw;
+          img {
+            width: 100%;
+            border-radius: 6px;
+            margin-bottom: 2vh;
+          }
+          .content-post {
+            display: flex;
+            flex-direction: column;
+            .date {
+              color: $tertiary;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+  .left,
+  .right {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    .UserProfile {
+      padding: 0;
+      margin: 0;
+      height: 50vh;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #bannerimg {
+        width: 100%;
+        height: 15vh;
+        background-color: cadetblue;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+      }
+      .pfp {
+        position: relative;
+        border-radius: 60%;
+        height: 7vh;
+        width: 7vh;
+      }
+      #username {
+        width: 80%;
+        font-size: 1.35rem;
+        margin: 3vh auto;
+        text-align: center;
+        color: $primary;
+      }
+      #userbio {
+        font-size: 1rem;
+        width: 80%;
+        text-align: left;
+        color: $primary;
+      }
+      .stats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: auto 0;
+        color: $primary;
+
+        #userfollowers,
+        #userfollows {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+    .UserGroupe {
+      margin: 0.5vh 0;
+      height: 40vh;
+      width: 90%;
+    }
+  }
+  .right {
+    .RecentMessages {
+      height: 90vh;
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      /* width */
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background: $primary;
+        border-radius: 8px;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background: $primary;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+      }
+      #searchuser {
+        height: 4vh;
+      }
+      #discussionlist {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: safe;
+        .message-box {
+          margin: 2vh 0;
+          height: 7vh;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          font-weight: 300;
+          width: auto;
+          .userpfp {
+            background-size: cover;
+            height: 6vh;
+            width: 6vh;
+            margin-right: 0.5vw;
+            border-radius: 60%;
+          }
+          .latest-message {
+            text-align: left;
+          }
+        }
+        .read-false {
+          font-weight: 600;
+        }
+        .user-card {
+          position: relative;
+          top: 5vh;
+          left: 0;
+          height: 3vh;
+          width: 15vw;
+          background: $primary;
+          color: $secondary;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

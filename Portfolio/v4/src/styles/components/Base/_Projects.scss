@@ -1,0 +1,76 @@
+.projects {
+  background: $orange;
+  display: flex;
+  flex-direction: column;
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 15vw;
+    .section-title {
+      font-size: 5vw;
+      align-self: center;
+    }
+    .project-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(auto);
+      grid-gap: 3vw;
+      align-self: center;
+      .project-block {
+        text-decoration: none;
+        color: white;
+        .madewith {
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.25vh;
+        }
+        max-width: 35vw;
+        align-self: baseline;
+        .at {
+          color: white;
+          font-weight: 800;
+          text-decoration: none;
+        }
+        * {
+          margin: 1vh 0;
+        }
+        .project-title {
+          font-size: 2.25vw;
+          font-family: "CodeNext", sans-serif;
+          letter-spacing: 0.5vh;
+        }
+        .date {
+          font-size: 1.5vw;
+          font-weight: 900;
+          letter-spacing: 0.5vh;
+        }
+        .project-desc {
+          font-size: 2vh;
+        }
+        .project-img {
+          max-width: 35vw;
+          border-radius: 16px 16px 8px 8px;
+          border: 5px solid $dark;
+        }
+      }
+    }
+  }
+  .wsm {
+    align-self: baseline;
+    background: black;
+    font-weight: 900;
+    height: 6vh;
+    left: -2vw;
+    margin: 3vh 0;
+    padding: 2vh 2vw;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 15vw;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+}

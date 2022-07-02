@@ -1,0 +1,46 @@
+#webProjects {
+  #webProjectList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .web-project-card {
+      opacity: 0;
+      transition: 300ms ease-in-out;
+      width: 45vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: space-around;
+      margin-top: 10vh;
+      img {
+        width: 100%;
+        margin-bottom: 2vh;
+        border: 3px $secondary solid;
+        border-radius: 1px;
+        height: 80%;
+      }
+      .project-name {
+        font-size: 3rem;
+      }
+    }
+    .web-project-card.appear {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #webProjects {
+    #webProjectList {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: space-evenly;
+      .web-project-card {
+        width: 95vw;
+        margin-top: 2.5vh;
+      }
+    }
+  }
+}

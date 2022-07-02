@@ -1,0 +1,155 @@
+//! Whiteboard styling
+
+//* Tool Bar
+* button {
+  border: none;
+  background-color: transparent;
+}
+* button:hover {
+  border: none;
+  background-color: rgba(85, 85, 255, 0.226);
+  border-radius: 60%;
+}
+#board {
+  -webkit-print-color-adjust: exact;
+}
+
+.tool-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  .tools {
+    height: 7vh;
+    padding: 0 1vw;
+    background: #efefef;
+    box-shadow: 5px 5px 10px #dedede, -5px -5px 10px #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .tool {
+      height: 5vh;
+      width: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1vw;
+    }
+  }
+  img {
+    height: 4vh;
+    width: 4vh;
+  }
+}
+#projectname {
+  height: 7vh;
+  border: none;
+  border-bottom: #1d1d1d solid 3px;
+  background: #efefef;
+}
+#projectname:focus {
+  border-bottom: transparent;
+  outline: none;
+}
+#projectname::placeholder {
+  color: #1d1d1d;
+}
+//* Board content
+//?Fonts changer
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.BhuTuka {
+  font-family: "BhuTuka Expanded One", cursive;
+}
+.Smooch {
+  font-family: "Smooch Sans", sans-serif;
+}
+//? Text manager
+.text {
+  display: flex;
+  float: left;
+  text-align: center;
+  line-height: 24px;
+  vertical-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.font-list {
+  display: none;
+}
+.txt:hover .font-list {
+  display: flex;
+  flex-direction: column;
+  position: inherit;
+  transform: translateY(5vh);
+}
+//? Shape manager
+.item {
+  position: absolute;
+  z-index: 2;
+  background-color: red;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  height: 5vh;
+  min-width: 5vh;
+  resize: none;
+}
+.circle {
+  border-radius: 60%;
+}
+.triangle {
+  width: 40px;
+  height: 40px;
+  background: green;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+//? Shape transform
+.resizer {
+  height: 10px;
+  width: 10px;
+  border-radius: 60%;
+  background: white;
+  border: 3px solid black;
+  z-index: 3;
+  position: absolute;
+  display: none;
+}
+.focus .resizer {
+  display: block;
+}
+.tl {
+  top: -1px;
+  left: -1px;
+  cursor: nw-resize;
+}
+.tr {
+  top: -1px;
+  right: -1px;
+  cursor: ne-resize;
+}
+.bl {
+  bottom: -1px;
+  left: -1px;
+  cursor: sw-resize;
+}
+.br {
+  bottom: -1px;
+  right: -1px;
+  cursor: se-resize;
+}
+.t {
+  top: 0;
+  left: 40%;
+  cursor: n-resize;
+}
+.Resize-Active {
+  resize: both;
+  overflow: auto;
+}
+#output {
+  position: absolute;
+  top: 0;
+  left: 0;
+}

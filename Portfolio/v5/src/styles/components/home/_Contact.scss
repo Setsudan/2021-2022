@@ -1,0 +1,35 @@
+#contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1vh 2vw;
+  .contact-box {
+    background-color: $secondary;
+    color: $primary;
+    height: 30vh;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .info-box {
+    background: $primary;
+    color: $secondary;
+    text-align: left;
+    p {
+      font-size: 1.35rem;
+      max-width: 70%;
+      a {
+        font-size: 1.35rem;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+  #contact {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+.landing {
+  background-color: $dark;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(16, 5vw);
+  grid-template-rows: repeat(8, 10vh);
+  padding: 15vh 10vw;
+  .catch-txt {
+    grid-column: 1 / 10;
+    h1 {
+      font-size: 7vw;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 6vw;
+    }
+  }
+  .discover-txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    grid-row: 8 / 9;
+    grid-column: 7 / 11;
+    p {
+      font-size: 1.5vw;
+    }
+    img {
+      height: 5vh;
+      width: 3vw;
+      animation: arrDown 1s infinite ease-in-out;
+      z-index: 10;
+    }
+  }
+}

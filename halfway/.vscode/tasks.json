@@ -1,0 +1,38 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+      },
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dev",
+            "type": "shell",
+            "command": "npx vite"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "npx vite build"
+        },
+        {
+            "label": "install",
+            "type": "shell",
+            "command": "npm i"
+        },
+        {
+            "label": "start",
+            "type": "shell",
+            "command": "npm i ; npx vite"
+        },
+        {
+            "label": "preview",
+            "type": "shell",
+            "command": "npx vite build ; npx vite preview"
+        }
+        
+    ]
+}

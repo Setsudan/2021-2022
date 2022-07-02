@@ -1,0 +1,47 @@
+$navbtn: 7vh;
+.NavBtn {
+  position: fixed;
+  top: $navbtn;
+  left: $navbtn;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Code Next";
+  color: white;
+  text-decoration: none;
+  font-size: $navbtn;
+  z-index: 101;
+  img {
+    height: $navbtn;
+    width: $navbtn;
+    transition: 600ms ease-in-out;
+    &:hover {
+      transition: 300ms ease-in-out;
+      border-radius: 50%;
+      background-color: $red;
+    }
+  }
+}
+#nav-menu {
+  background-color: $dark;
+  height: 100vh;
+  width: 100vw;
+}
+#links {
+  width: 100vw;
+  height: 100vh;
+  background: $dark;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  a {
+    font-size: 7vh;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      text-decoration: underline;
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+@import url("http://fonts.cdnfonts.com/css/kollektif");
+@import url("http://fonts.cdnfonts.com/css/telegrafico");
+:root {
+  font-family: "Kollektif", sans-serif;
+  font-size: 12px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+@import "./components/variables";
+@import "./components/animations";
+@import "./components/Loader";
+@import "./components/navbar";
+@import "./components/home/Landing";
+@import "./components/home/Intro";
+@import "./components/home/Skills";
+@import "./components/home/Contact";
+@import "./components/Family/access";
+@import "./components/home/EOP";
+@import "./components/imgs";
+@import "./components/footer";
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.empathize {
+  font-family: "Telegrafico", sans-serif;
+}
+a {
+  color: $secondary;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.catchphrase {
+  font-size: 4rem;
+}
+body {
+  padding-top: 5px;
+  margin: 0 1vw;
+}
+.disabled {
+  cursor: not-allowed;
+}
+.scrollToNext {
+  position: sticky;
+  top: 90vh;
+  left: 90vw;
+  border-radius: 60%;
+  height: 10vh;
+  width: 10vh;
+  &:hover {
+    transition: 600ms ease-in-out;
+    svg {
+      transition: 600ms ease-in-out;
+      transform: rotate(360deg);
+    }
+  }
+  svg {
+    fill: $primary;
+    height: 10vh;
+    width: 10vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 5px;
+    margin: 0 2vh;
+    max-width: 94vh;
+  }
+  a {
+    color: $secondary;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  .catchphrase {
+    font-size: 3rem;
+  }
+}

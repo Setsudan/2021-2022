@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: #1d1d1d;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      @keyframes LogoAnimation {
+        0% {
+          stroke-dasharray: 100px;
+          opacity: 0;
+        }
+        25% {
+          opacity: 1;
+        }
+        100% {
+          stroke-dasharray: 1200px;
+        }
+      }
+      #logo path {
+        opacity: 0;
+        animation: LogoAnimation 3s ease-in-out infinite;
+        animation-delay: calc(var(--order) * 100ms);
+      }
+    </style>
+  </head>
+  <body></body>
+</html>

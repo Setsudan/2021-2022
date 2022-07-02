@@ -1,0 +1,74 @@
+#ethlnybg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./img/logo.png");
+  background-attachment: fixed;
+  animation: FadeIn 600ms ease-in-out;
+}
+#footerlogo {
+  position: relative;
+  right: 1vw;
+  aspect-ratio: 21/9;
+  height: 20vh;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./img/logo.png");
+}
+#graphicprojectbg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./img/GraphicProjects.png");
+  background-attachment: fixed;
+}
+#webprojectsbg {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./img/WebProjects.png");
+  background-attachment: fixed;
+}
+
+@media screen and (max-width: 480px) {
+  #ethlnybg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./img/logo.png");
+    background-attachment: local;
+  }
+  #footerlogo {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    max-width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./img/logo.png");
+  }
+  #graphicprojectbg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./img/GraphicProjects.png");
+    background-attachment: local;
+  }
+  #webprojectsbg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./img/WebProjects.png");
+    background-attachment: local;
+  }
+}
